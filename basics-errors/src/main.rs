@@ -35,6 +35,8 @@ fn main() {
     }
 
     //* unwrap y expect -> not recommended, they can panick
+    // Unwrap: access the value of an Option
+    // Expect: the same, but the second argument is the custom panick message
     let gift = Some("candy");
     assert_eq!(gift.unwrap(), "candy"); // Assert that two expressions are equal
 
