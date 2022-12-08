@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "bucles"
+name = "exercise-if-else"
 version = "0.1.0"

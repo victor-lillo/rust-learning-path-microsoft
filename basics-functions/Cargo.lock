@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "hash-map"
+name = "basics-functions"
 version = "0.1.0"

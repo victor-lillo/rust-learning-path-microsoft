@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "bucles-basics"
+name = "basics-hash-map"
 version = "0.1.0"

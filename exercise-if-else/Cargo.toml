@@ -1,5 +1,5 @@
 [package]
-name = "rust-functions"
+name = "exercise-if-else"
 version = "0.1.0"
 edition = "2021"
 

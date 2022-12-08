@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "rust-functions"
+name = "basics-bucles"
 version = "0.1.0"
