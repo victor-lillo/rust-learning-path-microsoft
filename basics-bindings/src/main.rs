@@ -1,3 +1,4 @@
+//! Moving, copying and cloning bindings
 fn process_move(input: String) {
     println!("Move: {}", input)
 }
@@ -30,8 +31,26 @@ fn caller_clone() {
     process_clone(str); // s was never moved and so it can still be used.
 }
 
+// ! References
+fn print_greeting(message: &String) {
+    println!("Greeting: {}", message);
+}
+
+fn change_reference(message: &mut String) {
+    message.push_str("!"); // We try to add a "!" to the end of our message
+}
+
+// For modifying the reference, we need to type the original binding and the reference as mutable
+fn references() {
+    let mut greeting = String::from("Hello");
+    print_greeting(&greeting); // `print_greeting` takes a `&String` not an owned `String` so we borrow `greeting` with `&`
+    print_greeting(&greeting); // Since `greeting` didn't move into `print_greeting` we can use it again
+    change_reference(&mut greeting);
+}
+
 fn main() {
     caller_copied();
     caller_moved();
     caller_clone();
+    references();
 }
