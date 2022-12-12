@@ -1,3 +1,4 @@
+#![allow(dead_code, unused_variables)]
 // each type implementing this trait must provide its own custom behavior for the body of the method.
 trait Area {
     fn area(&self) -> f64;

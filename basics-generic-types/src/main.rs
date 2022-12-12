@@ -1,3 +1,4 @@
+#![allow(dead_code, unused_variables)]
 struct Point<T> {
     x: T,
     y: T,
