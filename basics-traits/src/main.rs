@@ -1,5 +1,6 @@
 #![allow(dead_code, unused_variables)]
 // each type implementing this trait must provide its own custom behavior for the body of the method.
+//  Traits: similar than type, but used when we need to specify function or struct parameters in terms of behavior rather than concrete value.
 trait Area {
     fn area(&self) -> f64;
 }
